@@ -5,9 +5,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 @pytest.fixture()
 def chrome_browser():
-    # Инициализация драйвера
     driver = webdriver.Chrome()
+    driver.implicitly_wait(10)
     driver.maximize_window()
     yield driver
-    # Завершение работы драйвера
+  
     driver.quit()

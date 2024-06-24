@@ -1,0 +1,35 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "files.autoSave": "afterDelay",
+    "python.testing.pytestEnabled": true,  // Убедитесь, что pytest включен
+    "python.testing.pytestPath": "C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\pytest.exe",
+    "python.testing.pytestArgs": [
+        "test"
+    ],
+        "python.experiments.optInto": [   
+        "All"
+    ],
+    "git.path": "",
+    "pytest.pythonPath": "C:\\Users\\Администратор\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "workbench.editorAssociations": {
+        "*.pyc": "default"
+    },
+    "workbench.editor.showTabs": "multiple", // Изменено на true для отображения вкладок
+    "pytest.command": "pytest --verbose",
+    "testExplorer.addToEditorContextMenu": true,
+    "workbench.settings.applyToAllProfiles": [
+        "pytest.command",
+        "pytest.pythonPath",
+        "testing.coverageBarThresholds"
+    ],
+    "testing.coverageBarThresholds": {
+        
+        
+        "red": 0,
+        "yellow": 60,
+        "green": 90
+    },
+    "python.testing.unittestEnabled": false
+}
