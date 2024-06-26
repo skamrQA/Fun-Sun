@@ -28,8 +28,8 @@ headers = {
 
 
 # API_TEST_1
-@allure.title("Регистрация полльзователя")
-@allure.description("Тест проверяет регистрацию пользователя")
+@allure.title("Доступ к сайту")
+@allure.description("Тест проверяет доступ к сайту")
 @allure.feature("REGISTRATION")
 @allure.severity("critical")
 @pytest.mark.positive_test
