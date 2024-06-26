@@ -1,9 +1,6 @@
 import allure
-import requests
 import pytest
-from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from time import sleep
+import requests
 
 base_url = "https://fstravel.com/api"
 
@@ -11,7 +8,7 @@ headers = {
 
         'content-type': 'application/json',
         'x-csrf-token': "Py3VpOl1opcmtodQqRpinisQSa5gvQJNTCmZPYr8",
-        'x-xsrf-token': "eyJpdiI6InRFaGJaVWg3NGVWZ0dQdHE0a2RXM2c9PSIsInZhbHVlIjoiN3M4MHJrZ0tYRmMvaFhMNGNXWXcwUFljc2VXZmZOQXFJcDZZOURWelRXUU10N0Q3d3RIWG11WU9XYTVqS2tOeHRMUXZWSjl2NGNqZEU5M0FFRTllUFhHc1ZDQ3N2UmZScHJvaFovWkxodWNuVlNQQnlsTnB4NXY5UkZrUGtSLzMiLCJtYWMiOiI1MDNkMDk4ODMzOTUwNjI2YWYxOTdhYzViYzg2MTEzYjVmZjYyNWI4ZjA1M2QyOGE0MjI5ZTQwM2JkNDdmZmEwIn0="
+        'x-xsrf-token': "eyJpdiI6Img4Zm91RTdmOE4yWi94Ui9sVTFFUEE9PSIsInZhbHVlIjoiZU5MQVBVZllpNnhCdENUaUhaQkJQRmQrdVFhanB0SmkvaGFBNERkUW0xWUs1a3VlTDVDeWt6NkxpS1RYWjFOMUpYWVgraVpYcHVXbFdvZzVaNWhSMzZvV0NGMFhqVzgxVGlxRS9HN0lsK1VseCtUaGJlRVdIOHJkVnlqd1h1dHUiLCJtYWMiOiJkYTBkNmMzNWNlYTIxNDYzNWYxNTZiMTM5NTAyMjhhODA5NDY0MDcwOGYxOGMzMDYwZGZjZWIyMzIxNTRhY2JlIn0="
 
          
     }
@@ -62,7 +59,7 @@ def test_authorization_user():
 @allure.feature("SEARCH")
 @allure.severity("critical")
 @pytest.mark.positive_test
-def test_search_tour():
+def test_search_tour(null=None):
     
     with allure.step("api. Поиск тура через API"):
         search_data = {

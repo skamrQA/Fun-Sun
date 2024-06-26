@@ -14,9 +14,9 @@ from page.main_page import MainPage
 @allure.feature("READ")
 @allure.severity("blocker")
 @pytest.mark.positive_test
-def test_fun_and_sun(chrome_browser):
+def test_sing_in(chrome_browser):
     tour_main = MainPage(chrome_browser)
-    tour_main.sing_in
+    tour_main.sing_in()
 
 # TEST2
 @allure.title("Провека поля 'Откуда' на ввод кирилицей")
@@ -24,9 +24,9 @@ def test_fun_and_sun(chrome_browser):
 @allure.feature("READ")
 @allure.severity("critical")
 @pytest.mark.positive_test
-def test_fun_and_sun(chrome_browser):
+def test_input_from(chrome_browser):
     tour_main = MainPage(chrome_browser)
-    tour_main.input_from
+    tour_main.input_from()
     
 # TEST3
 @allure.title("Провека поля страны 'Куда' на ввод кирилицей")
@@ -34,9 +34,9 @@ def test_fun_and_sun(chrome_browser):
 @allure.feature("READ")
 @allure.severity("critical")
 @pytest.mark.positive_test
-def test_fun_and_sun(chrome_browser):
+def test_input_where(chrome_browser):
     tour_main = MainPage(chrome_browser)
-    tour_main.input_where
+    tour_main.input_where()
 
 # TEST4
 @allure.title("Провека поля 'Дата вылета' на кликабельность")
@@ -44,9 +44,9 @@ def test_fun_and_sun(chrome_browser):
 @allure.feature("READ")
 @allure.severity("critical")
 @pytest.mark.positive_test
-def test_fun_and_sun(chrome_browser):
+def test_flight_date(chrome_browser):
     tour_main = MainPage(chrome_browser)
-    tour_main.flight_date
+    tour_main.flight_date()
 
 # TEST5
 @allure.title("Провека поля 'Длительность' и на кликабельность + нажатие кнопки 'Найти'")
@@ -54,6 +54,6 @@ def test_fun_and_sun(chrome_browser):
 @allure.feature("READ")
 @allure.severity("critical")
 @pytest.mark.positive_test
-def test_fun_and_sun(chrome_browser):
+def test_duration(chrome_browser):
     tour_main = MainPage(chrome_browser)
-    tour_main.duration
+    tour_main.duration()
